@@ -28,8 +28,8 @@ This mini-project is exclusively serving UNSW undergraduates who take COMM1180 i
 * **Future Value & Present Value** for single lump-sum cash flows.
 * **Required Rate & Required Time** calculations.
 * **Ordinary & Due Annuity** present and future value.
-* **Advance & Arrears Perpetuity** present value.
-* **APR to EAR** and **EAR to APR** conversions with real-world examples.
+* **Ordinary & Due Perpetuity** present value.
+* **APR to EAR** and **EAR to APR** conversions.
 * **Learning Mode** toggles on-screen concept reminders and formulas.
 
 ---
