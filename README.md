@@ -1,8 +1,8 @@
 # Financial Calculator CLI
 
-A simple command-line program to apply key financial mathematical concepts from COMM1180 Week 5, including Time Value of Money, Annuities, Perpetuities, and APR⇄EAR conversions. Designed for Python 3.10+ with an optional learning mode for concept reinforcement.
+A simple command-line program to apply key financial mathematical concepts from COMM1180 Week 5, including Time Value of Money, Annuities, Perpetuities, and APR⇄EAR conversions. Designed to be run on Python 3.10+ with an optional learning mode for concept reinforcement.
 
-This mini-project exclusively serves UNSW COMM1180 students during T2 2025, especially who want to know more about the basics of Python programming and how programming can interact with financial applications.
+This mini-project, as a complementary activity outside of the syllabus, exclusively serves the UNSW COMM1180 cohort during T2 2025, especially those who are eager to learn more about the basics of Python programming and how programming skills could interact with financial applications.
 
 ☘️**By students, for students.**
 
