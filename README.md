@@ -2,6 +2,8 @@
 
 A simple command-line program to apply key financial mathematical concepts from COMM1180 Week 5, including Time Value of Money, Annuities, Perpetuities, and APR⇄EAR conversions. Designed for Python 3.10+ with an optional learning mode for concept reinforcement.
 
+This mini-project is exclusively serving UNSW undergraduates who take COMM1180 in Term 2, 2025, by students, for students.
+
 ---
 
 ## Table of Contents
