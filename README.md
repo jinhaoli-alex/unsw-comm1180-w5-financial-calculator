@@ -66,7 +66,7 @@ pip3 --version
 
    ```bash
    git clone https://github.com/jinhaoli-alex/unsw-comm1180-w5-financial-calculator.git
-   cd financial-calculator
+   cd unsw-comm1180-w5-financial-calculator
    ```
 
    *Or* download the `financial_calculator.py` file directly.
