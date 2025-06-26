@@ -31,8 +31,8 @@ except ImportError:
 # Constants for annuity/perpetuity types
 ORDINARY_ANNUITY = "ordinary"
 DUE_ANNUITY = "due"
-ADVANCE_PERPETUITY = "advance"
-ARREARS_PERPETUITY = "arrears"
+PERPETUITY_DUE = "advance"
+ORDINARY_PERPETUITY = "arrears"
 
 console = Console()
 
@@ -108,9 +108,9 @@ class Perpetuity:
         self.r, self.C, self.perp_type = r, C, perp_type
 
     def present_value(self) -> float:
-        if self.perp_type == ADVANCE_PERPETUITY:
+        if self.perp_type == PERPETUITY_DUE:
             return self.C / self.r * (1 + self.r)
-        elif self.perp_type == ARREARS_PERPETUITY:
+        elif self.perp_type == ORDINARY_PERPETUITY:
             return self.C / self.r
         else:
             raise ValueError("Invalid perpetuity type")
@@ -148,7 +148,7 @@ class LearningMode:
         return "[bold]Formula:[/] FV = C × [(1 + r)^n - 1] / r"
 
     def perpetuity_concept(self) -> str:
-        return "[bold]Concept:[/] A perpetuity is an infinite series of equal payments made either at the end of each period (arrears) or at the beginning (advance)."
+        return "[bold]Concept:[/] A perpetuity is an infinite series of equal payments made either at the end of each period (ordinary) or at the beginning (due)."
 
 
 class FinancialCalculator:
@@ -300,7 +300,7 @@ class FinancialCalculator:
         console.print("1. Ordinary (end)")
         console.print("2. Due (beginning)")
         typ = console.input("Select type (1-2): ").strip()
-        perp_type = ARREARS_PERPETUITY if typ == '1' else ADVANCE_PERPETUITY
+        perp_type = ORDINARY_PERPETUITY if typ == '1' else PERPETUITY_DUE
 
         result = Perpetuity(rate, C, perp_type).present_value()
         console.print(f"[bold green]Present Value:[/] {result:.2f}")
